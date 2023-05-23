@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Nombre: <%= @client.name %></h1>
+<h1>Edad: <%= @client.age %></h1>
+
+<br>
+
+<div>
+  <%= link_to "Editar cliente", edit_client_path(@client), class: 'btn btn-warning' %>
+</div>
+
+<br>
+
+<div>
+  <%= link_to "Volver a la lista de clientes", clients_path, class: 'btn btn-primary' %>
+</div>
+
+<br>

@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container align-items-center text-center">
+  <h1>Películas</h1>
+  <div id="movies">
+    <div class="row">
+      <% @movies.each do |movie| %>
+        <%= render movie %>
+      <% end %>
+    </div>
+
+<div class="d-grid gap-2 col-4 mx-auto">
+  <%= link_to "Nueva película", new_movie_path, class: "btn btn-primary" %>
+</div>
+
+
+
+
